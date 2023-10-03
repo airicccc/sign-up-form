@@ -1,34 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+:root {
+	--color: #f3cfc6;
+	--txt: black;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: var(--txt);
+	font-family: "Prata";
+}
+
 input {
-    appearance: none;
+	appearance: none;
 }
 
 .container {
-    display: flex;
+	height: 100vh;
+	display: flex;
 }
 
 .left-panel {
-    width: 40%
+	width: 67vw;
+	margin: 0 10vw;
 }
 
 .header {
-    margin-top: 15vh;
-    max-width: 70ch;
+	margin-top: 15vh;
+	max-width: 70ch;
 }
 
 .sign-on {
-    margin-top: 5vh;
+	margin-top: 5vh;
+}
+
+.sign-on > p {
+	margin-bottom: 1rem;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+    font-size: 13px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
-    display: flex;
+	display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
+	flex-wrap: wrap;
 }
 
 .sign-up {
-    margin-top: 5vh;
+	margin-top: 5vh;
+}
+
+.right-panel {
+	display: flex;
+	position: relative;
+}
+
+.color-pane {
+	width: 33vw;
+	background-color: var(--color);
+}
+
+.banner {
+	margin-top: 15vh;
+	text-align: center;
+	font-size: 40px;
+}
+
+.icon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-image: url(./images/kitty.svg);
+	background-size: cover;
+	height: 0;
+	width: 110%;
+	padding-bottom: 110%;
 }
