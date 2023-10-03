@@ -1,0 +1,34 @@
+input {
+    appearance: none;
+}
+
+.container {
+    display: flex;
+}
+
+.left-panel {
+    width: 40%
+}
+
+.header {
+    margin-top: 15vh;
+    max-width: 70ch;
+}
+
+.sign-on {
+    margin-top: 5vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: flex;
+}
+
+.sign-up {
+    margin-top: 5vh;
+}
