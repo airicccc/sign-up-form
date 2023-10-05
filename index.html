@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sign Up Form</title>
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="./styles.css" />
+        <script src="./script.js" defer></script>
 	</head>
 	<body>
 		<div class="container">
@@ -14,7 +15,7 @@
 					<p>
 						This is not a real online service! You know you need something like
 						this in your life to help you realize your deepest dreams. Sign up
-						now to get started.
+						<em>now</em> to get started.
 					</p>
 					<p>You know you want to!</p>
 				</div>
@@ -50,6 +51,7 @@
 										id="email"
 										name="email"
 										placeholder="name@example.com"
+                                        required
 									/>
 								</li>
 								<li>
@@ -60,25 +62,29 @@
 							<section>
 								<li>
 									<label for="pw">Password</label>
-									<input type="password" id="pw" name="pw" />
+									<input class="invalid" type="password" id="pw" name="pw" required/>
 								</li>
 								<li>
 									<label for="pw_cfm">Confirm Password</label>
-									<input type="password" id="pw_cfm" name="pw_cfm" />
+									<input class="invalid" type="password" id="pw_cfm" name="pw_cfm" required/>
 								</li>
 							</section>
 						</ul>
 					</form>
 				</div>
 				<div class="sign-up">
-					<button>Create Account</button>
+					<button type="submit">Create Account</button>
 					<p>Already have an account? <a href="">Log in</a></p>
 				</div>
 			</div>
             <div class="right-panel">
-                <div class="icon"></div>
+                <div class="art"></div>
                 <div class="color-pane">
-                    <div class="banner">Kuro</div>
+                    <div class="banner">
+                        <div class="title">Kuro</div>
+                        <div class="icon"></div>
+                    </div>
+                    
                 </div>
             </div>
 		</div>
